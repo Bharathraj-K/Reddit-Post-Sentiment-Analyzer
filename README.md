@@ -83,7 +83,7 @@ reddit = praw.Reddit(
 
 2. Run the Streamlit app:
 
-    streamlit run app.py
+    streamlit run SentimentAnalyser.py
 
 3. In the Streamlit web interface:
 
