@@ -16,7 +16,7 @@ Reddit Topic Sentiment Analyzer is a Streamlit app that fetches recent posts and
 ## Demo
 
 -Enter sub name and select number of posts to analyze and comments if wanted and then click on analyze. 
-![image alt](https://github.com/Bharathraj-K/Reddit-Post-Sentiment-Analyzer/blob/bb727bab2802aa389caa25401840bdd7249264b4/images/Screenshot%202025-05-20%20183431.png)
+![image alt](https://github.com/Bharathraj-K/Reddit-Post-Sentiment-Analyzer/blob/f3ac87ed496fb5e7a43bf9defbec4198da824ce6/images/Home.png)
 
 
 
