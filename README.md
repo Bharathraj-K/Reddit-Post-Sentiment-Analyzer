@@ -1,15 +1,27 @@
-# Reddit-Post-Sentiment-Analyzer
-Reddit Topic Sentiment Analyzer is a Streamlit app that fetches recent posts and comments from any subreddit using Reddit’s API. It uses VADER to analyze sentiment, showing if the content is positive, neutral, or negative, with results displayed in tables and pie charts for easy insights.
+# Reddit-Post-Summarizer-and-Sentiment-Analyzer
+
+🔍 Sentiment Analysis: Uses VADER to classify Reddit post titles and comments as Positive, Neutral, or Negative, displaying results in a table and pie chart.
+
+✂️ Post Summarization: Uses transformers-based models to generate abstractive summaries of Reddit posts, optionally targeting a specific post by ID.
 
 
 ## Features
 
-- Fetches the latest posts from a specified subreddit using Reddit’s API.
-- Optionally analyzes comments from each post.
-- Performs sentiment analysis on post titles and comments using the VADER sentiment analyzer.
-- Displays sentiment results in a table.
-- Visualizes overall sentiment distribution with a pie chart.
-- Built with Streamlit for an easy-to-use and interactive UI.
+✅ Sentiment Analyzer
+-Fetches latest posts and optionally comments using Reddit’s API.
+
+-Uses VADER for sentiment analysis on text.
+
+-Displays results in a clean table and a pie chart for visual insight.
+
+-Select number of posts and include/exclude comments.
+
+✅ Post Summarizer
+-Summarizes top or specific Reddit posts using Hugging Face transformers.
+
+-Uses abstractive models like facebook/bart-large-cnn or google/pegasus-xsum.
+
+-Automatically truncates long content for optimal summarization.
 
 ---
 
@@ -86,9 +98,16 @@ reddit = praw.Reddit(
     streamlit run SentimentAnalyser.py
 
 3. In the Streamlit web interface:
+   
+      
+    Enter the subreddit name (without r/) Or Post ID
 
-    Enter the subreddit name (without r/)
-    
+    To summarize select number of post to summarize
+
+    click the summarize button
+
+    _OR_
+   
     Select the number of posts to analyze
     
     Check the box to include comments in the analysis (optional)
@@ -96,8 +115,4 @@ reddit = praw.Reddit(
     Click the Analyze button
 
 
-#The app will fetch posts (and optionally comments), perform sentiment analysis using VADER, and display:
-
-A table of text and sentiment labels
-
-A pie chart showing sentiment distribution
+NOTE: YOU CAN CHANGE THE MODEL AND MAX TOKEN SIZE IF YOU WANT TO SINCE THE BASE MODEL I USED IS THE FASTEST AND MAY NOT PROVIDE BETTER RESULT FOR SUMMARIZATION
