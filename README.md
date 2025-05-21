@@ -27,6 +27,8 @@
 
 ## Demo
 
+![image alt](https://github.com/Bharathraj-K/Reddit-Post-Summarizer-and-Sentiment-Analyzer/blob/95a9227ca19698d4c0497ea9bc89d2ac586f8027/images/Screenshot%202025-05-21%20191054.png)
+
 -Enter sub name and select number of posts to analyze and comments if wanted and then click on analyze. 
 ![image alt](https://github.com/Bharathraj-K/Reddit-Post-Sentiment-Analyzer/blob/f3ac87ed496fb5e7a43bf9defbec4198da824ce6/images/Home.png)
 
